@@ -228,13 +228,9 @@ async function runOnce() {
     featuredBadgeName: featuredBadge?.name ?? "No featured badge",
     featuredBadgeIconUrl: featuredBadge?.iconUrl ?? null,
     totalGamesText: formatGamesOwned(totalGames),
-    mostPlayed: mostPlayed
-    //  ? `Most Played: ${mostPlayed.name}`
-    //  : "Most Played: Unknown",
-	  ? `‎‎‎ 「‎ ${mostPlayed.name}‎ ‎」 `
-      : "‎‎ ‎ ‎ ‎ ‎  ᴜɴᴋɴᴏᴡɴ",
+    mostPlayed: mostPlayed ? mostPlayed.name : "ᴜɴᴋɴᴏᴡɴ",
     mostPlayedIconUrl,
-    banStatus: `ʙᴀɴ ꜱᴛᴀᴛᴜꜱ: ${ban.label}`,
+    banStatus: ban.label,
     banStatusIconUrl,
     currentGameName: currentGame.name,
     currentGameIconUrl,
